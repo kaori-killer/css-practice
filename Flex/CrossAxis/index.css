@@ -1,0 +1,20 @@
+/* flex-direction: column */
+/* main axis: 세로 => justify-content*/
+/* cross axis: 가로 => align-litems*/
+
+.wrapper {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.box {
+    width: 100px;
+    height: 50px;;
+    background-color: blue;
+}
