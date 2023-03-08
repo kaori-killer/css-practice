@@ -1,6 +1,6 @@
 /* flex-direction: column */
-/* main axis: 세로 => justify-content*/
-/* cross axis: 가로 => align-litems*/
+/* main axis: 세로축 => justify-content*/
+/* cross axis: 가로축 => align-litems*/
 
 .wrapper {
     width: 400px;

@@ -1,7 +1,7 @@
 /* 기본 */
 /* flex-direction: row */
-/* main axis: 가로 => justify-content*/
-/* cross axis: 세로 => align-litems*/
+/* main axis: 가로축 => justify-content*/
+/* cross axis: 세로축 => align-litems*/
 
 .wrapper {
     height: 300px;

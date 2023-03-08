@@ -1,0 +1,51 @@
+/* flex-direction: row */
+/* main axis: 가로축 => justify-content*/
+/* 
+cross axis
+: 세로축 => 
+부모에게 주는 property: align-litems, 
+자식에게 주는 property: order, align-self
+*/
+
+/* 
+order
+- 배치 순서를 정할 수 있다.
+- 0을 기본으로 가지고 있다. 
+*/
+
+/* 
+align-self
+- cross axis를 따른다.
+- 하나의 box만 이동시킨다.
+*/
+
+.father {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.children {
+    width: 100px;
+    height: 50px;;
+    background-color: blue;
+}
+
+.children:nth-child(1) {
+    /* child 1 = order: 1 */
+    /* child 2 = order: 0 */
+    /* child 3 = order: 0 */
+    order: 1
+}
+
+.children:nth-child(2) {
+    align-self: start;
+}
+
+.children:nth-child(3) {
+    align-self: center;
+}
