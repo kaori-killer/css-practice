@@ -1,0 +1,19 @@
+/* 기본 */
+/* flex-wrap: nowrap =  요소의 width를 무시하더라도, 모든 요소가 같은 줄에 있게 위치시킨다. */
+/* flex-wrap: wrap = 요소의 크기를 지켜준다 */
+
+.father {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.children {
+    width: 100px; 
+    height: 50px;
+    background-color: blue;
+}

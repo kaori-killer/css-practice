@@ -1,0 +1,19 @@
+/* flex-direction */
+/* column-reverse: direction이 column인 상태에서 방향이 역순으로 바뀐다. */
+
+.father {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+
+.children {
+    width: 100px; 
+    height: 70px;
+    background-color: blue;
+}

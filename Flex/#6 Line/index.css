@@ -1,0 +1,26 @@
+/* 
+align-content
+- line을 수정할 수 있다.
+- cross Axis를 따른다.
+*/
+
+.father {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    /* 줄 간격이 없어진다. */
+    /* align-content: flex-start;  */
+
+    align-content: space-between;
+
+}
+
+.children {
+    width: 100px; 
+    height: 50px;
+    background-color: blue;
+}
