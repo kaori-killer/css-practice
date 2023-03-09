@@ -1,0 +1,22 @@
+/* 자식에게 주는 property */
+
+/* 1. element에게 `처음 크기`를 제공한다. */
+/* 2. shrink와 grow로 크기를 유동적으로 바꿀 수 있다. */
+/* 3. 크기를 바꾸지 않는다면, main axis 축을 따르기 때문에 width와 같은 개념이다. */
+/* 2. main axis가 column이라면, width가 아닌 heigth와 같은 개념이 된다. */
+
+.father {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.children {
+    flex-basis: 20px;
+    background-color: blue;
+    border: 2px solid red;
+}
