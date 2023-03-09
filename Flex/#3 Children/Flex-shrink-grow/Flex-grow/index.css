@@ -1,0 +1,38 @@
+/* 자식에게 주는 property */
+
+/* flexBox안에 '빈 공간'이 있을 때 => flex-grow */
+/* 빈 공간이 없다면 원래 크기만큼만 차지한다. */
+
+/* 기본 값 = flex-grow: 0 */
+
+.father {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.children {
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    border: 2px solid red;
+}
+
+/* chld(1) flex-grow: 0 */
+/* chld(2) flex-grow: 1 */
+/* chld(3)은 flex-grow: 2 */
+
+/* 이때, flex-grow: 1는 '빈 공간'의 1/3의 공간을 차지한다. */
+/* 이때, flex-grow: 2는 '빈 공간'의 2/3의 공간을 차지한다. */
+
+
+.children:nth-child(2) {
+    flex-grow: 1;
+}
+
+.children:nth-child(3) {
+    flex-grow: 2;
+}
