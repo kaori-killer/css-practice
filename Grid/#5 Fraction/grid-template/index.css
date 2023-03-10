@@ -1,0 +1,33 @@
+/* naming은 사용하지 않아도 된다. */
+
+.grid {
+    display: grid;
+    gap: 10px;
+    height: 50vh;
+
+    grid-template: 
+        [header-start] "header header header header" 1fr [header-end]
+        [content-start] "content content content nav" 2fr [content-end]
+        [footer-start] "footer footer footer footer" 1fr [footer-end]
+        / 1fr 1fr 1fr 1fr
+}
+
+.header {
+    background-color: red;
+    grid-area: header;
+}
+
+.content {
+    background-color: blue;
+    grid-area: content;
+}
+
+.nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+
+.footer {
+    background-color: purple;
+    grid-area: footer;
+}

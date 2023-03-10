@@ -1,0 +1,40 @@
+/* grid는 행(row)과 열(column)의 개수와 크기를 정할 수 있다.*/
+/* column-gap은 column간의 차이 */
+/* row-gap은 row간의 차이 */
+
+.grid {
+    display: grid;    
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: 100px repeat(3, 150px) 100px; 
+
+    /* layout이 어떻게 보여야 하는지 이름을 적을 수 있다. */
+    /* 묶음 내의 열과 행이 일치하도록 정의한다.  */
+    /* .을 이용해 빈 공간을 만들 수 있다. */
+    grid-template-areas:
+    "header header header header"
+    "content content . nav"
+    "content content . nav"
+    "content content . nav"
+    "footer footer footer footer"
+}
+
+.header {
+    background-color: red;
+    grid-area: header;
+}
+
+.content {
+    background-color: blue;
+    grid-area: content;
+}
+
+.nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+
+.footer {
+    background-color: purple;
+    grid-area: footer;
+}

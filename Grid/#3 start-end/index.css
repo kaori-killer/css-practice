@@ -1,0 +1,35 @@
+/* Template를 사용하지 않고 column과 row의 숫자를 사용해서 격자 만들기 */
+/* gird-column/row-start와 end는 줄(line)을 기준으로 한다. */
+
+.grid {
+    display: grid;    
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.header {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.content {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2 ;
+    grid-row-end: 4;
+
+}
+
+.nav {
+    background-color: yellow;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.footer {
+    background-color: purple;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}

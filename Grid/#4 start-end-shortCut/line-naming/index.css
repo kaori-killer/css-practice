@@ -1,0 +1,32 @@
+/* 짧게 쓰는 방법  */
+/* line에 이름을 지을 수 있다. */
+/* 많이 쓰는 방법은 아니다. */
+
+
+.grid {
+    display: grid;    
+    grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fouth-line] 100px [fifth-line] 100px;
+    grid-template-rows: repeat(4, 100px [sexy-line]);
+}
+
+.header {
+    background-color: red;
+    grid-column: span 4;
+}
+
+.content {
+    background-color: blue;
+    grid-column: first-line / fouth-line;
+    grid-row: sexy-line 1 / sexy-line 3;
+}
+
+.nav {
+    background-color: yellow;
+    grid-column: fifth-line / fouth-line;
+    grid-row: span 2;
+}
+
+.footer {
+    background-color: purple;
+    grid-column: span 4;
+}

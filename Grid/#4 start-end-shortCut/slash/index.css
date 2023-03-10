@@ -1,0 +1,47 @@
+/* 짧게 쓰는 방법  */
+
+/* 1. /를 활용한다. 시작 / 끝으로 범위를 지정하면 된다. */
+/* -를 이용해서 뒤에서부터 line을 지정할 수 있다. */
+
+/* 2. span를 이용한다. span은 공간을 차지 한다는 뜻이다. */
+/* span 2는 2개의 cell(사각형)를 갖는 다는 뜻이다.  */
+
+.grid {
+    display: grid;    
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.header {
+    background-color: red;
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+    /* grid-column: 1 / 5; */
+    grid-column: 1 / -1;
+}
+
+.content {
+    background-color: blue;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 / 4;
+
+    /* 방법1: grid-row-start: 2 ;
+    grid-row-end: 4; */
+    /* 방법2: grid-row: 2 / 4; */
+    /* 방법3 */ grid-row: 2 / span 2;
+}
+
+.nav {
+    background-color: yellow;
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-row: span 2;
+}
+
+.footer {
+    background-color: purple;
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+    grid-column: 1 / 5;
+}

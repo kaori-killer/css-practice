@@ -1,0 +1,32 @@
+/* fr */
+/* 1. 측정 단위이다. */
+/* 2. grid의 공간에만 fr이 적용된다.*/
+/* 3. %처럼 화면 비율에 따라 크기를 유동적으로 바꾼다. */
+/* 4. 가능한 많은 공간을 차지한다. */
+
+.grid {
+    display: grid;
+    gap: 10px;
+    height: 50vh;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+
+    /* 높이가 없으면 fr이 적용되지 않는다. */
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.header {
+    background-color: red;
+}
+
+.content {
+    background-color: blue;
+
+}
+
+.nav {
+    background-color: yellow;
+}
+
+.footer {
+    background-color: purple;
+}
